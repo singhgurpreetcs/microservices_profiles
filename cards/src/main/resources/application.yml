@@ -14,3 +14,22 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  config:
+    import:
+      - "application_qa.yml"
+      - "application_prod.yml"
+  profiles:
+    active:
+      - "qa"
+
+build:
+ version: "11.2"
+
+cards:
+ message: "Welcome to cards related local apis"
+ contactDetails:
+   name: "Gurpreet Singh -Developer"
+   email: "er.gurdevcards@yahoo.com"
+ onCallSupport:
+   - 123456789
+   - 234567890
